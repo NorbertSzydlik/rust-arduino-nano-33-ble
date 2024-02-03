@@ -1,0 +1,14 @@
+[package]
+name = "rust-arduino-nano-33-blink"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = "0.7.7"
+cortex-m-rt = "0.7.3"
+rtt-target = { version = "0.3.1", features = ["cortex-m"] }
+nrf52840-hal = { version = "0.16.0", features = ["rt"] }
+nb = "1.0.0"
+embedded-hal = { version = "0.2.3", features = ["unproven"] }
