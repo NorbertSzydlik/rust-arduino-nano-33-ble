@@ -1,6 +1,6 @@
 # Rust on Arduino nano 33 BLE
 This package is minimal example how to run program written in Rust on Arduino Nano 33 BLE.
-It uses Nordic nRF52480 processor, but it uses different interface to flash new software than examples from `nrf-hal`.
+It uses Nordic nRF52480 processor, but it has different interface to flash new software than examples from `nrf-hal`.
 
 # Compile and flash program to the device
 To flash this example package, simply run `./build.sh`.
