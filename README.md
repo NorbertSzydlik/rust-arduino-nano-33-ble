@@ -12,3 +12,11 @@ You can compile and flash it yourself using following commands:
 * `cargo build --target thumbv7em-none-eabihf --release`
 * `arm-none-eabi-objcopy -O binary target/thumbv7em-none-eabihf/release/rust-arduino-nano-33-blink target/blink.bin`
 * `arduino-cli upload -v -b arduino:mbed_nano:nano33ble -p /dev/ttyACM0 -i target/blink.bin`
+
+# Troubleshooting
+
+## No device found on TTYACM0
+
+* Check if device is connected with `lsusb`.
+* Check if device is present on different tty, e.g: /dev/ttyACM1 with `ls /dev | grep ACM`
+* Check if you have write permission `stty -F /dev/ttyACM0 1200`

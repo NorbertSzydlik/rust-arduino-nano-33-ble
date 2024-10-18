@@ -1,10 +1,10 @@
 #![no_main]
 #![no_std]
 
-use embedded_hal::prelude::_embedded_hal_timer_CountDown;
+use cortex_m::prelude::_embedded_hal_timer_CountDown;
 
 use nb::block;
-use embedded_hal::digital::v2::OutputPin;
+use embedded_hal::digital::OutputPin;
 use nrf52840_hal as hal;
 use hal::gpio::Level;
 
